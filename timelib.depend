@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1652947865 source:c:\users\jarno.rohmert\documents\schule\timelib\main.c
+	<stdio.h>
+	<stdlib.h>
+
