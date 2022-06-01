@@ -1,5 +1,11 @@
 #include "bibliothek.h"
+/**
+ *  @author Jarno
+ *  @description Funktionen für das timelib Projekt
+ *  @date May 2022
+ */
 
+//Eingabe der Datumsdaten vom User, return als Struct aus bibliothek.h
 struct Datum input_date()
 {
     struct Datum date;
@@ -11,7 +17,7 @@ struct Datum input_date()
     scanf("%i",&date.year);
     return date;
 }
-
+//Prüft ob das gegebene Jahr ein Schaltjahr ist oder nicht
 int is_leapyear(int year)
 {
     int leap;
@@ -33,6 +39,7 @@ int is_leapyear(int year)
     }
     return leap;
 }
+//Berechnet die menge der Tage in einem Monat, anhand eines Arrays
 int get_days_for_month(int month,int year, int *month_array)
 {
     int eingabe_monat;
@@ -46,6 +53,7 @@ int get_days_for_month(int month,int year, int *month_array)
     printf(month_array);
     return month_array[eingabe_monat];
 }
+//Ändert in einem Array(Tage_pro_monat) den Februar ab, falls das Jahr ein Schaltjahr ist
 int day_of_the_year(int day,int month,int year)
 {
     int tage_pro_monat[12] = {31,28,31,30,31,30,31,31,30,31,30,31}; //Menge der Tage in einem Monat

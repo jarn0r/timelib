@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ *  @author Jarno
+ *  @description Auflistung der Funktionen und Aufbau des Struct, welches für die Datums Berechnungen genutzt wird
+ *  @date May 2022
+ */
 struct Datum{
     int day;
     int month;
